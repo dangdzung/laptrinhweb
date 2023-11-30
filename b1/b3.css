@@ -1,0 +1,16 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+div img {
+    width: 20%;
+    height: 20%;
+}
+h1 {
+    font-family: Lato;
+    font-weight: 700;
+    text-align: center;
+}
