@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        .box {
+            width: calc(100% - 10px);
+            background: gray;
+            padding: 10px;
+            /* height: 120px; */
+            border: solid 1px #000;
+        }
+        p {
+            color: #000;
+            font-size: 3vw;
+            text-align: start;
+        }
+        .box-2 {
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            font-size: 1.5vw;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            margin-left: 20px;
+            white-space: nowrap;
+        }
+        .box-2:nth-child(1) {
+            background-color: red;
+        }
+        .box-2:nth-child(2) {
+            background-color: blue;
+            margin-top: 20px;
+        }
+        .box-2:nth-child(3) {
+            background-color: green;
+            margin-top: 20px;
+        }
+        ul {
+            margin-top: 100px;
+            font-size: 2vw;
+            margin-left: 200px;
+        }
+        .item {
+            list-style: square;
+            color: blue;
+        }
+    </style>
+    <body>
+        <div class="box">
+            <p>This is a basic HTMl page.</p>
+        </div>
+        <div>
+            <div class="box-2">Red Box</div>
+            <div class="box-2">Blue Box</div>
+            <div class="box-2">Green Box</div>
+        </div>
+        <ul>
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+        </ul>
+    </body>
+</html>

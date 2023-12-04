@@ -1,0 +1,22 @@
+body {
+    background-color: #009294;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    font-size: 16pt;
+    color: #ff0000;
+}
+ol {
+    border-style: dashed;
+    border-width: 4px;
+    border-color: blue;
+}
+p {
+    color: #fff;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
