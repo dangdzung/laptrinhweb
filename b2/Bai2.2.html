@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>W3School</title>
+        <style>
+            .clear:before,
+            .clear:after,
+            .panel:before,
+            .panel:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+            html {
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+            }
+            html,
+            body {
+                font-family: Verdana, sans-serif;
+                font-size: 15px;
+                line-height: 1.5;
+            }
+            .nextprev a.left,
+            .nextprev a.right {
+                background-color: #04aa6d;
+                color: #ffffff;
+                border-color: #04aa6d;
+            }
+            .nextprev a {
+                font-size: 18px;
+                font-family: "Source Sans Pro", sans-serif;
+                padding-left: 19px;
+                padding-right: 19px;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+            }
+            .left {
+                float: left !important;
+            }
+            .btn {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .btn {
+                border: none;
+                display: inline-block;
+                padding: 8px 16px;
+                vertical-align: middle;
+                overflow: hidden;
+                text-decoration: none;
+                color: inherit;
+                background-color: inherit;
+                text-align: center;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+            .right {
+                float: right !important;
+            }
+            .intro {
+                font-size: 16px;
+            }
+            .image {
+                max-width: 100%;
+                height: auto;
+            }
+            img {
+                vertical-align: middle;
+                border-style: none;
+            }
+            p {
+                margin-top: 1.2em;
+                margin-bottom: 1.2em;
+                font-size: 15px;
+            }
+            .example {
+                max-width: 500px;
+                padding: 8px 16px;
+                margin: 24px -16px;
+                border-radius: 0;
+                box-shadow: none !important;
+                background-color: #e7e9eb;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Segoe UI", Arial, sans-serif;
+                font-weight: 400;
+                margin: 10px 0;
+            }
+            h3 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 25px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .code {
+                font-size: 15px;
+                border-left: 4px solid #04aa6d;
+                margin-top: 16px !important;
+                margin-bottom: 16px !important;
+                width: auto;
+                background-color: #fff;
+                color: #000;
+                padding: 8px 12px;
+                border-left: 4px solid #4caf50;
+                word-wrap: break-word;
+                font-family: Consolas, Menlo, "courier new", monospace;
+            }
+            .btn {
+                color: #ffffff;
+                background-color: #04aa6d !important;
+                border-radius: 5px;
+                font-size: 17px;
+                font-family: "Source Sans Pro", sans-serif;
+                padding: 6px 18px;
+            }
+            .margin {
+                margin-bottom: 16px !important;
+            }
+            .codespan {
+                font-size: 105%;
+                background-color: rgba(222, 222, 222, 0.3);
+                color: crimson;
+                padding-left: 4px;
+                padding-right: 4px;
+                font-family: Consolas, Menlo, "courier new", monospace;
+            }
+            .note {
+                margin-left: -16px;
+                margin-right: -16px;
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                border-left: none;
+                background-color: #ffffcc;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Syntax</h1>
+        <div class="clear nextprev">
+            <a
+                class="left btn"
+                href="https://www.w3schools.com/css/css_intro.asp"
+                target="_blank"
+                >❮ Previous</a
+            >
+            <a
+                class="right btn"
+                href="https://www.w3schools.com/css/css_selectors.asp"
+                target="_blank"
+                >Next ❯</a
+            >
+        </div>
+        <hr />
+        <p class="intro">
+            A CSS rule consists of a selector and a declaration block.
+        </p>
+        <hr />
+        <h2>CSS Syntax</h2>
+        <div
+            style="
+                background-color: white;
+                padding: 1px 8px;
+                border-radius: 5px;
+            "
+        >
+            <p>
+                <img
+                    class="image"
+                    src="https://www.w3schools.com/css/img_selector.gif"
+                    alt="CSS selector"
+                />
+            </p>
+        </div>
+        <p>The selector points to the HTML element you want to style.</p>
+        <p>
+            The declaration block contains one or more declarations separated by
+            semicolons.
+        </p>
+        <p>
+            Each declaration includes a CSS property name and a value, separated
+            by a colon.
+        </p>
+        <p>
+            Multiple CSS declarations are separated with semicolons, and
+            declaration blocks are surrounded by curly braces.
+        </p>
+        <div class="example">
+            <h3>Example</h3>
+            <p>
+                In this example all &lt;p&gt; elements will be center-aligned,
+                with a red text color:
+            </p>
+            <div class="code">
+                <span class="cssselectorcolor" style="color: brown"
+                    >p
+                    <span class="cssdelimitercolor" style="color: black"
+                        >{</span
+                    >
+                    <span class="csspropertycolor" style="color: red">
+                        <br />&nbsp;&nbsp;color
+                        <span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                        >
+                            <span class="cssdelimitercolor" style="color: black"
+                                >:</span
+                            >
+                            red
+                            <span class="cssdelimitercolor" style="color: black"
+                                >;</span
+                            ></span
+                        >
+                        <br />&nbsp;&nbsp;text-align<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                        >
+                            <span class="cssdelimitercolor" style="color: black"
+                                >:</span
+                            >
+                            center
+                            <span class="cssdelimitercolor" style="color: black"
+                                >;</span
+                            ></span
+                        >
+                        <br
+                    /></span>
+                    <span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    >
+                </span>
+            </div>
+            <a
+                class="btn margin"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1"
+                target="_blank"
+                >Try it Yourself »</a
+            >
+        </div>
+        <h4>Example Explained</h4>
+        <ul>
+            <li>
+                <code class="codespan">p</code> is a selector in CSS (it points
+                to the HTML element you want to style: &lt;p&gt;).
+            </li>
+            <li>
+                <code class="codespan">color</code> is a property, and
+                <code class="codespan">red</code> is the property value
+            </li>
+            <li>
+                <code class="codespan">text-align</code> is a property, and
+                <code>center</code> is the property value
+            </li>
+        </ul>
+        <div class="note panel">
+            <p>
+                You will learn much more about CSS selectors and CSS properties
+                in the next chapters!
+            </p>
+        </div>
+        <br />
+        <div class="clear nextprev">
+            <a
+                class="left btn"
+                href="https://www.w3schools.com/css/css_intro.asp"
+                >❮ Previous</a
+            >
+            <a
+                class="right btn"
+                href="https://www.w3schools.com/css/css_selectors.asp"
+                >Next ❯</a
+            >
+        </div>
+        <hr />
+    </body>
+</html>
