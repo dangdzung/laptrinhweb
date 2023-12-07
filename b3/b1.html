@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./b1.css" />
+        <script
+            src="https://kit.fontawesome.com/533aad8d01.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: "Product Sans";
+        }
+        .container {
+            width: 100%;
+            height: 10000px;
+            display: flex;
+        }
+        .left {
+            width: 10%;
+            position: relative;
+            /* overflow: scroll; */
+        }
+        .left-container {
+            position: fixed;
+            height: auto;
+        }
+        li {
+            list-style-type: none;
+            padding: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        .right {
+            width: 90%;
+            padding: 5px;
+        }
+        .inner-container {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .inner-wrap {
+            margin-bottom: 70px;
+        }
+        .inner-head {
+            width: 100%;
+            height: 550px;
+            background-image: url(https://phunugioi.com/wp-content/uploads/2020/02/hinh-anh-dep-thien-nhien.jpg);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .inner-head h1 {
+            font-weight: 300;
+            font-size: 112px;
+        }
+        .inner-head .desc {
+            width: 820px;
+            height: 60px;
+        }
+        .inner-head p {
+            text-align: center;
+            font-weight: 300;
+            font-size: 22px;
+            color: #1f1f1f;
+        }
+        .inner-head button {
+            border: none;
+            background-color: #0d57d0;
+            width: 216px;
+            height: 75px;
+            border-radius: 60px;
+            margin-top: 20px;
+        }
+        .inner-head button:hover {
+            background-color: #3673d5;
+            cursor: pointer;
+        }
+        .inner-head a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .inner-main {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+            margin-top: 60px;
+        }
+        .inner-footer {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .inner-main .inner-list {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .inner-main .inner-item {
+            width: 33.33%;
+            border-radius: 10px;
+        }
+        .inner-main .inner-item img {
+            height: 200px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .inner-main h2 {
+            font-size: 50px;
+            font-weight: 400;
+            margin-left: 20px;
+        }
+        .inner-main .inner-item .desc {
+            padding: 0 17px;
+            padding-bottom: 20px;
+        }
+        .inner-main .inner-item .desc h3 {
+            font-weight: 400;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .inner-main .inner-item .desc p {
+            /* margin-top: 10px; */
+            font-size: 18px;
+        }
+        .inner-main .inner-item:hover {
+            background-color: #90aedd;
+            cursor: pointer;
+        }
+        .inner-main .inner-item-2 {
+            width: 100%;
+            padding: 20px;
+            background-color: #e2e6ec;
+        }
+        .inner-main .inner-item-2 h3 {
+            font-weight: 500;
+        }
+        .inner-main .inner-item-2 p {
+            margin-top: 15px;
+        }
+        .inner-footer {
+            margin-top: 140px;
+        }
+        .inner-footer .inner-list {
+            display: flex;
+            gap: 35px;
+        }
+        .inner-footer .inner-list .inner-item:first-child {
+            width: 44%;
+        }
+        .inner-footer .inner-list .inner-item {
+            margin-right: 25px;
+        }
+        .inner-footer .inner-list .inner-item i {
+            font-size: 25px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .inner-footer .inner-list .inner-item i::after {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 3px;
+            bottom: -7px;
+            left: 0;
+            background-color: black;
+            opacity: 0;
+        }
+        .inner-footer .inner-list .inner-item i:hover ~ i::after{
+            opacity: 1;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="left-container"></div>
+            </div>
+            <div class="right">
+                <div class="inner-container">
+                    <div class="inner-head">
+                        <h1>Material Design</h1>
+                        <div class="desc">
+                            <p>
+                                Material 3 is the latest version of Google’s
+                                open-source design system. Design and build
+                                beautiful, usable products with Material 3.
+                            </p>
+                        </div>
+                        <button><a href="#!">Get started</a></button>
+                    </div>
+                    <div class="inner-main">
+                        <div class="inner-wrap">
+                            <h2>News & launches</h2>
+                            <div class="inner-list">
+                                <div class="inner-item">
+                                    <img
+                                        src="https://th.bing.com/th/id/R.8379b0cf2f327791b7e5a69b5e29d6e3?rik=Eypq9RVp%2bycGPQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-5OiJxFhZc8k%2fVRYqVNG0awI%2fAAAAAAAABg8%2f5zCDsLHB02U%2fs1600%2fanh-dep-3d-ve-thien-nhien-2.jpg&ehk=CnT9KIe5kKoggfxKDntgDBmHGF3PQCbALieLi4mGCMU%3d&risl=&pid=ImgRaw&r=0"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Figma design kit</h3>
+                                        <p>
+                                            Jumpstart your M3 designs with the
+                                            complete library of ready-made
+                                            components
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="inner-item">
+                                    <img
+                                        src="https://i.ytimg.com/vi/rHp95L7G674/maxresdefault.jpg"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Large screen guidance</h3>
+                                        <p>
+                                            Get started adapting your layouts
+                                            for a range of window size classes
+                                            and hardware
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="inner-item">
+                                    <img
+                                        src="https://4.bp.blogspot.com/-LimpYNdedDw/WxNZzTnkrHI/AAAAAAAAALg/9YgFqq5U98sArCyzixJyvYMMvrnl4oO9QCEwYBhgL/s1600/cartoon-love-picture_105431474.gif"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Material Design at Google I/O</h3>
+                                        <p>
+                                            See the full list of Material talks
+                                            and tutorials launching at I/o 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-wrap">
+                            <h2>Design system updates</h2>
+                            <div class="inner-list">
+                                <div class="inner-item">
+                                    <img
+                                        src="https://th.bing.com/th/id/R.8379b0cf2f327791b7e5a69b5e29d6e3?rik=Eypq9RVp%2bycGPQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-5OiJxFhZc8k%2fVRYqVNG0awI%2fAAAAAAAABg8%2f5zCDsLHB02U%2fs1600%2fanh-dep-3d-ve-thien-nhien-2.jpg&ehk=CnT9KIe5kKoggfxKDntgDBmHGF3PQCbALieLi4mGCMU%3d&risl=&pid=ImgRaw&r=0"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Figma design kit</h3>
+                                        <p>
+                                            Jumpstart your M3 designs with the
+                                            complete library of ready-made
+                                            components
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="inner-item">
+                                    <img
+                                        src="https://i.ytimg.com/vi/rHp95L7G674/maxresdefault.jpg"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Large screen guidance</h3>
+                                        <p>
+                                            Get started adapting your layouts
+                                            for a range of window size classes
+                                            and hardware
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="inner-item">
+                                    <img
+                                        src="https://4.bp.blogspot.com/-LimpYNdedDw/WxNZzTnkrHI/AAAAAAAAALg/9YgFqq5U98sArCyzixJyvYMMvrnl4oO9QCEwYBhgL/s1600/cartoon-love-picture_105431474.gif"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Material Design at Google I/O</h3>
+                                        <p>
+                                            See the full list of Material talks
+                                            and tutorials launching at I/o 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-list">
+                                <div class="inner-item">
+                                    <img
+                                        src="https://th.bing.com/th/id/R.8379b0cf2f327791b7e5a69b5e29d6e3?rik=Eypq9RVp%2bycGPQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-5OiJxFhZc8k%2fVRYqVNG0awI%2fAAAAAAAABg8%2f5zCDsLHB02U%2fs1600%2fanh-dep-3d-ve-thien-nhien-2.jpg&ehk=CnT9KIe5kKoggfxKDntgDBmHGF3PQCbALieLi4mGCMU%3d&risl=&pid=ImgRaw&r=0"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Figma design kit</h3>
+                                        <p>
+                                            Jumpstart your M3 designs with the
+                                            complete library of ready-made
+                                            components
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="inner-item">
+                                    <img
+                                        src="https://i.ytimg.com/vi/rHp95L7G674/maxresdefault.jpg"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Large screen guidance</h3>
+                                        <p>
+                                            Get started adapting your layouts
+                                            for a range of window size classes
+                                            and hardware
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="inner-item">
+                                    <img
+                                        src="https://4.bp.blogspot.com/-LimpYNdedDw/WxNZzTnkrHI/AAAAAAAAALg/9YgFqq5U98sArCyzixJyvYMMvrnl4oO9QCEwYBhgL/s1600/cartoon-love-picture_105431474.gif"
+                                        alt=""
+                                    />
+                                    <div class="desc">
+                                        <h3>Material Design at Google I/O</h3>
+                                        <p>
+                                            See the full list of Material talks
+                                            and tutorials launching at I/o 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-wrap">
+                            <h2>Resources</h2>
+                            <div class="inner-list">
+                                <div class="inner-item inner-item-2">
+                                    <h3>Material blog</h3>
+                                    <p>
+                                        News,tutorials,and inspiration from the
+                                        Material team
+                                    </p>
+                                </div>
+                                <div class="inner-item inner-item-2">
+                                    <h3>Figma design kit</h3>
+                                    <p>
+                                        Customizable styles and components to
+                                        help you design with Material 3
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inner-list">
+                                <div class="inner-item inner-item-2">
+                                    <h3>Get started</h3>
+                                    <p>
+                                        Guides,videos,and tools to start
+                                        building with Material
+                                    </p>
+                                </div>
+                                <div class="inner-item inner-item-2">
+                                    <h3>Develop</h3>
+                                    <p>
+                                        Code and developer documentation for
+                                        Android,Flutter,and the Web
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-footer">
+                        <div class="inner-wrap">
+                            <div class="inner-list">
+                                <div class="inner-item">
+                                    <i class="fa-solid fa-house-laptop"></i>
+                                    <p>
+                                        Material Design is an adaptable system
+                                        of guidelines, components, and tools
+                                        that support the best practices of user
+                                        interface design. Backed by open-source
+                                        code, Material Design streamlines
+                                        collaboration between designers and
+                                        developers, and helps teams quickly
+                                        build beautiful products.
+                                    </p>
+                                </div>
+                                <div class="inner-item">
+                                    <ul>
+                                        <li>Social</li>
+                                        <li>
+                                            <a href="#!">GitHub</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">Twitter</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">YouTube</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">Blog RSS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="inner-item">
+                                    <ul>
+                                        <li>Libraries</li>
+                                        <li>
+                                            <a href="#!">Android</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">Compose </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">Flutter</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">Web</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="inner-item">
+                                    <li>Archived versions</li>
+                                    <li>
+                                        <a href="#!">Material Design 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Material Design 2 </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

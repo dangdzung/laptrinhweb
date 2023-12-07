@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .header {
+            background-color: orange;
+        }
+        .container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1140px;
+            text-align: center;
+            background-color: red;
+        }
+        .footer {
+            background-color: aqua;
+            /* clear: both; */
+        }
+        /* .body1 {
+            margin: 20px 0;
+            width: 100%;
+            float: left;
+        }
+        .body1 .col {
+            width: calc(33.33% - 20px / 3);
+            float: left;
+            margin-left: 10px;
+        }
+        .body1 .col:first-child {
+            margin-left: 0;
+        }
+        .clear-both {
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .body1 .col {
+                width: 100%;
+                margin: 0;
+            }
+        } */
+        .body1 {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+        .body1 .col {
+            width: 33.33%;
+        }
+        @media screen and (max-width: 600px) {
+            .body1{
+                flex-direction: column;
+            }
+            .body1 .col {
+                width: 100%;
+            
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="body1">
+                <div class="col" style="background-color: rgb(133, 140, 140)">
+                    col1
+                </div>
+                <div class="col" style="background-color: rgb(133, 140, 140)">
+                    col2
+                </div>
+                <div class="col" style="background-color: rgb(133, 140, 140)">
+                    col3
+                </div>
+                <!-- <div class="clear-both"></div> -->
+            </div>
+
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
