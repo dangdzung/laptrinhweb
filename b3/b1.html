@@ -23,6 +23,7 @@
             width: 100%;
             /* height: 10000px; */
             display: flex;
+            position: relative;
         }
         .left {
             width: 10%;
@@ -30,11 +31,11 @@
             background-color: #d7e1f3;
             /* border-right: 1px solid gray; */
             /* overflow: scroll; */
-        }
-        .left-container {
+            height: 1000px;
             position: fixed;
-            height: auto;
+            display: block;
         }
+
         li {
             list-style-type: none;
             padding: 10px;
@@ -49,6 +50,7 @@
         .right {
             width: 90%;
             padding: 5px;
+            margin-left: 10%;
         }
         .inner-container {
             width: 100%;
@@ -61,7 +63,7 @@
         .inner-head {
             width: 100%;
             height: 550px;
-            background-image: url(https://phunugioi.com/wp-content/uploads/2020/02/hinh-anh-dep-thien-nhien.jpg);
+            background-image: url(../b3/imgs/anh1.jpg);
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -134,7 +136,7 @@
             padding-bottom: 20px;
         }
         .inner-main .inner-item .desc h3 {
-            font-weight: 400;
+            font-weight: 500;
             margin-top: 20px;
             margin-bottom: 10px;
             font-size: 24px;
@@ -142,6 +144,7 @@
         .inner-main .inner-item .desc p {
             /* margin-top: 10px; */
             font-size: 18px;
+            font-weight:300;
         }
         .inner-main .inner-item:hover {
             background-color: #90aedd;
@@ -207,11 +210,16 @@
         .box-icon {
             display: flex;
             flex-direction: column;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             font-size: 13px;
             align-items: center;
             /* position: relative; */
         }
+        .box-icon .button {
+            display: block;
+            margin-top: 30px;
+        }
+
         .box-icon i {
             font-size: 20px;
             background-color: inherit;
@@ -245,27 +253,89 @@
             padding-right: 40px;
             position: relative;
         }
-        .box-icon-develop {
+        .public {
             position: absolute;
             top: 0;
-            left: 148px;
-            background-color: #3673d5;
+            left: 130px;
             z-index: 100;
             height: 114%;
             border-radius: 0 8px 8px 0;
             width: 0px;
             overflow: hidden;
             /* opacity: 0; */
-            transition: all 0.5s;
+            transition: all ease 0.5s;
             /* width: 150px; */
             display: inline-block;
         }
+
         .box-icon-dv:hover .box-icon-develop {
-            width: 150px;
+            width: 230px;
             display: inline-block;
+            padding: 20px;
+            background-color: #d7e1f3;
+        }
+        .box-icon-develop a {
+            color: #1f1f1f;
+            font-size: 16px;
+        }
+        .public a {
+            color: #1f1f1f;
+            font-size: 16px;
+        }
+        .box-icon:hover .box-icon-foundation {
+            width: 230px;
+            display: inline-block;
+            padding: 20px;
+            background-color: #d7e1f3;
+        }
+        .box-icon:hover .box-icon-styles {
+            width: 230px;
+            display: inline-block;
+            padding: 20px;
+            background-color: #d7e1f3;
+        }
+        .box-icon .button {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            border: none;
+        }
+        .box-icon .button i {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid #1f1f1f;
+        }
+        .box-icon .button:hover i {
+            color: black;
+        }
+        .box-icon .box-icon-components {
+            overflow: scroll;
+        }
+        .box-icon:hover .box-icon-components {
+            width: 230px;
+            display: inline-block;
+            padding: 20px;
+            background-color: #d7e1f3;
         }
     </style>
     <body>
+        <button
+            style="
+                width: 80px;
+                background-color: orange;
+                cursor: pointer;
+                height: 30px;
+                border-radius: 16px;
+                border: none;
+
+                display: inline-block;
+            "
+        >
+            <a href="../index.html" style="color: white; text-decoration: none"
+                >Trang chủ</a
+            >
+        </button>
         <div class="container">
             <div class="left">
                 <div class="left-container">
@@ -281,7 +351,7 @@
                     <div class="box-icon box-icon-dv">
                         <i class="fa-solid fa-arrows-left-right"></i
                         ><span>Develop</span>
-                        <div class="box-icon-develop">
+                        <div class="box-icon-develop public">
                             <ul>
                                 <li>
                                     <a href="#!">Develop overview</a>
@@ -302,18 +372,165 @@
                     <div class="box-icon">
                         <i class="fa-solid fa-envelope-open-text"></i
                         ><span> Foundations</span>
+                        <div
+                            class="box-icon-develop box-icon-foundation public"
+                        >
+                            <ul>
+                                <li>
+                                    <a href="#!">Foundation overview</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Accessibility</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Content desgin</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Customizing Material</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Design tokens</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Interaction</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Layout</a>
+                                </li>
+                                <li>
+                                    <a href="#!">MaterialA-Z</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="box-icon">
                         <i class="fa-solid fa-palette"></i>
                         <span> Styles</span>
+                        <div class="box-icon-develop box-icon-styles public">
+                            <ul>
+                                <li>
+                                    <a href="#!">Styles overview</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Color</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Elevation</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Icons</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Motion</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Shape</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Typography</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="box-icon">
                         <i class="fa-solid fa-circle-plus"></i>
                         <span> Components</span>
+                        <div class="box-icon-components public">
+                            <ul>
+                                <li>
+                                    <a class="text" href="#!"
+                                        >Components overview</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">App bars</a>
+                                    <!-- <i class="icon1 fa-solid fa-caret-down"></i> -->
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Badges</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Buttons</a>
+                                    <!-- <i class="icon1 fa-solid fa-caret-down"></i> -->
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Cards</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Carousel</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Checkbox</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Chips</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Date pickers</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Dialogs</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Divider</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Lists</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Menus</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Navigation</a>
+                                    <!-- <i class="icon1 fa-solid fa-caret-down"></i> -->
+                                </li>
+                                <li>
+                                    <a class="text" href="#!"
+                                        >Progress indicators</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Radio button</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Search</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Sheets</a>
+                                    <!-- <i class="icon1 fa-solid fa-caret-down"></i> -->
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Sliders</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Snackbar</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Switch</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Tabs</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Text fileds</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Time pickers</a>
+                                </li>
+                                <li>
+                                    <a class="text" href="#!">Tooltips</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="box-icon">
                         <i class="fa-brands fa-blogger"></i>
                         <span> Blogs</span>
+                    </div>
+                    <div class="box-icon">
+                        <button class="button">
+                            <i class="fa-regular fa-moon"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -335,10 +552,7 @@
                             <h2>News & launches</h2>
                             <div class="inner-list">
                                 <div class="inner-item">
-                                    <img
-                                        src="https://th.bing.com/th/id/R.8379b0cf2f327791b7e5a69b5e29d6e3?rik=Eypq9RVp%2bycGPQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-5OiJxFhZc8k%2fVRYqVNG0awI%2fAAAAAAAABg8%2f5zCDsLHB02U%2fs1600%2fanh-dep-3d-ve-thien-nhien-2.jpg&ehk=CnT9KIe5kKoggfxKDntgDBmHGF3PQCbALieLi4mGCMU%3d&risl=&pid=ImgRaw&r=0"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh2.png" alt="" />
                                     <div class="desc">
                                         <h3>Figma design kit</h3>
                                         <p>
@@ -349,10 +563,7 @@
                                     </div>
                                 </div>
                                 <div class="inner-item">
-                                    <img
-                                        src="https://i.ytimg.com/vi/rHp95L7G674/maxresdefault.jpg"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh3.png" alt="" />
                                     <div class="desc">
                                         <h3>Large screen guidance</h3>
                                         <p>
@@ -363,10 +574,7 @@
                                     </div>
                                 </div>
                                 <div class="inner-item">
-                                    <img
-                                        src="https://4.bp.blogspot.com/-LimpYNdedDw/WxNZzTnkrHI/AAAAAAAAALg/9YgFqq5U98sArCyzixJyvYMMvrnl4oO9QCEwYBhgL/s1600/cartoon-love-picture_105431474.gif"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh4.png" alt="" />
                                     <div class="desc">
                                         <h3>Material Design at Google I/O</h3>
                                         <p>
@@ -381,86 +589,60 @@
                             <h2>Design system updates</h2>
                             <div class="inner-list">
                                 <div class="inner-item">
-                                    <img
-                                        src="https://th.bing.com/th/id/R.8379b0cf2f327791b7e5a69b5e29d6e3?rik=Eypq9RVp%2bycGPQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-5OiJxFhZc8k%2fVRYqVNG0awI%2fAAAAAAAABg8%2f5zCDsLHB02U%2fs1600%2fanh-dep-3d-ve-thien-nhien-2.jpg&ehk=CnT9KIe5kKoggfxKDntgDBmHGF3PQCbALieLi4mGCMU%3d&risl=&pid=ImgRaw&r=0"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh5.png" alt="" />
                                     <div class="desc">
-                                        <h3>Figma design kit</h3>
+                                        <h3>M3 for Jetpack Compose</h3>
                                         <p>
-                                            Jumpstart your M3 designs with the
-                                            complete library of ready-made
-                                            components
+                                            With the latest stable release, use
+                                            Jetpack Compose to build a complete
+                                            M3 Android app
                                         </p>
                                     </div>
                                 </div>
                                 <div class="inner-item">
-                                    <img
-                                        src="https://i.ytimg.com/vi/rHp95L7G674/maxresdefault.jpg"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh6.png" alt="" />
                                     <div class="desc">
-                                        <h3>Large screen guidance</h3>
+                                        <h3>New component: M3 carousel</h3>
                                         <p>
-                                            Get started adapting your layouts
-                                            for a range of window size classes
-                                            and hardware
+                                            An expressive new component for displaying scrollable collections of content
                                         </p>
                                     </div>
                                 </div>
                                 <div class="inner-item">
-                                    <img
-                                        src="https://4.bp.blogspot.com/-LimpYNdedDw/WxNZzTnkrHI/AAAAAAAAALg/9YgFqq5U98sArCyzixJyvYMMvrnl4oO9QCEwYBhgL/s1600/cartoon-love-picture_105431474.gif"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh7.png" alt="" />
                                     <div class="desc">
-                                        <h3>Material Design at Google I/O</h3>
+                                        <h3>Back navigation & gestures</h3>
                                         <p>
-                                            See the full list of Material talks
-                                            and tutorials launching at I/o 2023
+                                            Explore new motion and gesture capabilities for smooth navigation across screens
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="inner-list">
                                 <div class="inner-item">
-                                    <img
-                                        src="https://th.bing.com/th/id/R.8379b0cf2f327791b7e5a69b5e29d6e3?rik=Eypq9RVp%2bycGPQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-5OiJxFhZc8k%2fVRYqVNG0awI%2fAAAAAAAABg8%2f5zCDsLHB02U%2fs1600%2fanh-dep-3d-ve-thien-nhien-2.jpg&ehk=CnT9KIe5kKoggfxKDntgDBmHGF3PQCbALieLi4mGCMU%3d&risl=&pid=ImgRaw&r=0"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh8.png" alt="" />
                                     <div class="desc">
-                                        <h3>Figma design kit</h3>
+                                        <h3>Motion system updates</h3>
                                         <p>
-                                            Jumpstart your M3 designs with the
-                                            complete library of ready-made
-                                            components
+                                            Get started applying motion, from ready-to-use transition patterns to updated guidance
                                         </p>
                                     </div>
                                 </div>
                                 <div class="inner-item">
-                                    <img
-                                        src="https://i.ytimg.com/vi/rHp95L7G674/maxresdefault.jpg"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh9.png" alt="" />
                                     <div class="desc">
-                                        <h3>Large screen guidance</h3>
+                                        <h3>Material Theme Builder</h3>
                                         <p>
-                                            Get started adapting your layouts
-                                            for a range of window size classes
-                                            and hardware
+                                            Easily migrate or get started with the M3 color system and dynamic color
                                         </p>
                                     </div>
                                 </div>
                                 <div class="inner-item">
-                                    <img
-                                        src="https://4.bp.blogspot.com/-LimpYNdedDw/WxNZzTnkrHI/AAAAAAAAALg/9YgFqq5U98sArCyzixJyvYMMvrnl4oO9QCEwYBhgL/s1600/cartoon-love-picture_105431474.gif"
-                                        alt=""
-                                    />
+                                    <img src="../b3/imgs/anh10.png" alt="" />
                                     <div class="desc">
-                                        <h3>Material Design at Google I/O</h3>
+                                        <h3>New color guidance for tones</h3>
                                         <p>
-                                            See the full list of Material talks
-                                            and tutorials launching at I/o 2023
+                                            Updates include tone-based surface colors, contrast modes, and fixed accent colors
                                         </p>
                                     </div>
                                 </div>
@@ -506,7 +688,10 @@
                         <div class="inner-wrap">
                             <div class="inner-list">
                                 <div class="inner-item">
-                                    <i class="fa-solid fa-house-laptop"></i>
+                                    <i
+                                        class="fa-solid fa-house-laptop"
+                                        style="z-index: -1"
+                                    ></i>
                                     <p>
                                         Material Design is an adaptable system
                                         of guidelines, components, and tools
