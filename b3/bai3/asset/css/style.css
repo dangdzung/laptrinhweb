@@ -76,7 +76,7 @@ a {
 .header .inner-wrap .list ul li a {
     display: inline-block;
     /* width: 20px;
-    height: 20px; */
+        height: 20px; */
     /* background-color: #eab308; */
     padding: 20px 0;
 }
@@ -476,3 +476,80 @@ a {
     align-items: center;
 }
 /* End Footer */
+/* Section-sp */
+.section-sp {
+    background-color: var(--bg-1);
+}
+.section-sp .inner-wrap {
+    padding: 90px 0;
+}
+.section-sp .inner-wrap .box {
+    position: relative;
+    margin-top: 20px;
+    width: 600px;
+    height: 400px;
+    background-image: url(https://dbk.vn/uploads/ckfinder/images/tin-tuc-1/anh-ma-kinh-di-1.jpg);
+    overflow: hidden;
+}
+.section-sp .inner-wrap .box .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.section-sp .inner-wrap .box .image span {
+    width: 25%;
+    height: 100%;
+    background-image: url(https://th.bing.com/th/id/OIP.3-e2JKWYOb03oOC_7-88BwHaEo?rs=1&pid=ImgDetMain);
+    transition: 0.5s;
+}
+.section-sp .inner-wrap .box:hover .image span {
+    transform: translateY(-100%);
+}
+.section-sp .inner-wrap .box .image span:nth-child(1) {
+    background-position: 0;
+    transition-delay: 0;
+}
+.section-sp .inner-wrap .box .image span:nth-child(2) {
+    background-position: 33.333%;
+    transition-delay: 0.1s;
+}
+.section-sp .inner-wrap .box .image span:nth-child(3) {
+    background-position: 66.66%;
+    transition-delay: 0.2s;
+}
+.section-sp .inner-wrap .box .image span:nth-child(4) {
+    background-position: 100%;
+    transition-delay: 0.3s;
+}
+.section-sp .inner-wrap .box .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+.section-sp .inner-wrap .box:hover .content {
+    transition-delay: 0.5s;
+    transform: translateY(0);
+}
+.section-sp .inner-wrap .box:hover .content h2 {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.section-sp .inner-wrap .box:hover .content p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+/* end- section-sp */
