@@ -559,7 +559,22 @@ a {
     padding: 90px 0;
     /* background-color: #262a2b; */
 }
-.btvn .inner-list {
+.btvn .inner-item h1{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btvn .inner-list{
     display: flex;
+    gap: 20px;
+
+}
+.btvn .inner-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btvn .inner-item ul li {
+    margin-bottom: 10px;
 
 }
