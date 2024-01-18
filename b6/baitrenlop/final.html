@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <img src="" style="width: 200px" alt="" />
+        <script>
+            function hienThiAnh(dovat) {
+                if (dovat == "mu") {
+                    document.write(
+                        '<img style="width: 500px; height: 500px; object-fit:cover" src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-blue-butterfly-festival-visor-png-image_4673572.jpg" alt="Mũ">'
+                    );
+                } else {
+                    if (dovat == "giay") {
+                        document.write(
+                            '<img style="width: 500px; height: 500px; object-fit:cover"  src=https://tse2.mm.bing.net/th?id=OIP.uP9Q9gMAhpOw2NvRJjCxxAHaHa&pid=Api&P=0&h=220>'
+                        );
+                    }
+                }
+            }
+        </script>
+        <p>Hãy chọn đồ vật mà bạn thích</p>
+        <input type="button" value="Mũ" onclick="hienThiAnh('mu')" />
+        <input type="button" value="Giầy" onclick="hienThiAnh('giay')" />
+    </body>
+</html>
