@@ -84,6 +84,8 @@
     }
     .section-six .inner-wrap .inner-item {
         width: 100%;
+    }.section-five .inner-wrap .inner-desc,.section-five .inner-wrap .title{
+        text-align: center;width: 100%;
     }
 }
 @media screen and (max-width: 600px) {
