@@ -1,0 +1,93 @@
+@media screen and (max-width: 768px) {
+    .list {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+    }
+    .section-one .inner-wrap {
+        flex-direction: column;
+    }
+    .section-one .inner-wrap .inner-img {
+        width: 100%;
+        height: 100%;
+    }
+    .section-one .inner-wrap .inner-content {
+        text-align: center;
+    }
+    .section-two .inner-wrap {
+        flex-direction: column;
+    }
+    .section-two .inner-wrap .inner-img {
+        width: 100%;
+    }
+    .section-two .inner-wrap .inner-content {
+        width: 100%;
+        text-align: center;
+    }
+    .section-two .inner-wrap .inner-content p {
+        width: 100%;
+    }
+    .section-three .inner-wrap .inner-desc {
+        width: 100%;
+    }
+    .section-three .inner-wrap {
+        text-align: center;
+    }
+    .section-three .inner-wrap .inner-list {
+        flex-direction: column;
+    }
+    .section-three .inner-wrap .inner-item {
+        width: 100%;
+    }
+    .section-five .inner-wrap {
+        text-align: center;
+    }
+    .section-five .inner-wrap .inner-list {
+        flex-direction: column;
+    }
+    .section-five .inner-wrap .inner-list .inner-item {
+        width: 100%;
+    }
+    .section-five .inner-wrap .inner-desc {
+        width: 100%;
+    }
+    .section-seven .inner-wrap .inner-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-seven .inner-wrap .inner-box .inner-left {
+        width: 100%;
+    }
+    .section-seven .inner-wrap .inner-box .inner-right {
+        width: 100%;
+        text-align: center;
+    }.section-seven .inner-wrap .inner-box .inner-right .inner-form-wrap input, .section-seven .inner-wrap .inner-box .inner-right .inner-form-wrap textarea{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .section-four .inner-wrap .inner-img {
+        flex-direction: column;
+    }
+    .section-four .inner-wrap .inner-img .inner-left,
+    .section-four .inner-wrap .inner-img .inner-right {
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 850px) {
+    .section-six .inner-wrap .inner-list {
+        flex-direction: column;
+    }
+    .section-six .inner-wrap .inner-item {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .section-six .inner-wrap .inner-item .inner-img img {
+        width: 100%;
+    }
+}
