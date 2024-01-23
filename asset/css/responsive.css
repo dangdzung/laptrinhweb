@@ -2,7 +2,7 @@
     .list {
         display: none;
     }
-    .fa-bars {
+    .header .inner-wrap .fa-bars {
         display: block;
         color: #fff;
         font-size: 20px;

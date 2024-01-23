@@ -386,7 +386,7 @@ a {
 
 /* Section-seven */
 .section-seven {
-    background-color: var(--bg-2);
+    background-color: var(--bg-1);
 }
 .section-seven .inner-wrap {
     padding: 96px 0;
@@ -450,7 +450,7 @@ a {
 
 /* Footer */
 .footer {
-    background-color: var(--bg-2);
+    background-color: var(--bg-1);
 }
 .footer .inner-wrap {
     padding: 90px 0;
@@ -599,7 +599,7 @@ body {
     color: var(--color);
     background: var(--bgColor);
 }
-.fa-bars {
+.header .inner-wrap .fa-bars {
     display: none;
 }
 
@@ -719,4 +719,51 @@ body {
 }
 .credits a {
     color: var(--color);
+}
+.section-ex {
+    background-color: var(--bg-2);
+    color: #fff;
+    /* padding: 40px 0px; */
+}
+.section-ex .inner-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+.section-ex .inner-wrap .inner-left,
+.section-ex .inner-wrap .inner-right {
+    width: 49%;
+}
+.section-ex .inner-wrap .inner-left h1{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+.section-ex .inner-wrap .inner-left  p{
+    font-size: 1.5rem;
+}
+.section-ex .inner-wrap .inner-right p{
+    margin: 7px 0;
+}
+.inner-number {
+    width: 90%;
+    height: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.inner-number::before {
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 20px;
+    background-color: orange;
+}
+.inner-number__2::before{
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20px;
+    background-color: orange;
 }
