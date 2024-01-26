@@ -51,9 +51,7 @@
                             <li>
                                 <a href="#!">Resume</a>
                             </li>
-                            <li>
-                                <a href="#!">Blog</a>
-                            </li>
+                            <li><a href="#!">Blog</a>+</li>
                             <li>
                                 <a href="#!">Contact</a>
                             </li>
@@ -62,7 +60,18 @@
                             </li>
                         </ul>
                     </div>
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars menu-toggle"></i>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#!" class="menu-link">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#!" class="menu-link">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#!" class="menu-link">Works</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -549,8 +558,119 @@
                             <div class="inner-number"></div>
                             <p>5% Javascript</p>
                             <div class="inner-number"></div>
+                            <p>5% Git</p>
+                            <div class="inner-number"></div>
                             <p>10% HTML/CSS</p>
                             <div class="inner-number__2 inner-number"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-eight">
+                <div class="container">
+                    <div class="inner-wrap">
+                        <div class="slider">
+                            <!-- list Items -->
+                            <div class="list">
+                                <div class="item active">
+                                    <img src="./asset/imgs/1.jpg" />
+                                    <div class="content">
+                                        <p>design</p>
+                                        <h2>Slider 01</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Labore, neque? Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Ipsum, ex.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./asset/imgs/2.jpg" />
+                                    <div class="content">
+                                        <p>design</p>
+                                        <h2>Slider 02</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Labore, neque? Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Ipsum, ex.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./asset/imgs/3.jpg" />
+                                    <div class="content">
+                                        <p>design</p>
+                                        <h2>Slider 03</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Labore, neque? Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Ipsum, ex.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./asset/imgs/4.jpg" />
+                                    <div class="content">
+                                        <p>design</p>
+                                        <h2>Slider 04</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Labore, neque? Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Ipsum, ex.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./asset/imgs/5.jpg" />
+                                    <div class="content">
+                                        <p>design</p>
+                                        <h2>Slider 05</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Labore, neque? Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Ipsum, ex.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- button arrows -->
+                            <div class="arrows">
+                                <button id="prev"><</button>
+                                <button id="next">></button>
+                            </div>
+                            <!-- thumbnail -->
+                            <div class="thumbnail">
+                                <div class="item active">
+                                    <img src="./asset/imgs/1.jpg" />
+                                    <div class="content">Name Slider</div>
+                                </div>
+                                <div class="item">
+                                    <img src="./asset/imgs/2.jpg" />
+                                    <div class="content">Name Slider</div>
+                                </div>
+                                <div class="item">
+                                    <img src="./asset/imgs/3.jpg" />
+                                    <div class="content">Name Slider</div>
+                                </div>
+                                <div class="item">
+                                    <img src="./asset/imgs/4.jpg" />
+                                    <div class="content">Name Slider</div>
+                                </div>
+                                <div class="item">
+                                    <img src="./asset/imgs/5.jpg" />
+                                    <div class="content">Name Slider</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -581,14 +701,29 @@
                             <div class="inner-right">
                                 <div class="inner-form-wrap">
                                     <input type="text" placeholder="Name" />
+                                    <input
+                                        type="email"
+                                        name=""
+                                        id=""
+                                        placeholder="You email:"
+                                    />
+                                    <input
+                                        name=""
+                                        id=""
+                                        placeholder="Your phone:"
+                                    />
                                     <textarea placeholder="Message"></textarea>
                                 </div>
-                                <a href="#!" class="button">Contact us</a>
+                                <button type="button" onclick="validateForm()">
+                                    <a href="#!" class="button">Contact us</a>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <script src="./nhap.js"></script>
+        <script src="./asset/final.js"></script>
     </body>
 </html>
