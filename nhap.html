@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Date of Birth Selection</title>
+        <script
+            src="https://kit.fontawesome.com/533aad8d01.js"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            .matkhau {
+                /* width:100%; */
+
+                border-radius: 25px;
+                /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+                position: relative;
+            }
+            .show_2 {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+                cursor: pointer;
+                color: black; /* Đặt màu cho biểu tượng mắt */
+            }
+
+            .matkhau input {
+                display: block;
+                width: 100%;
+                /* padding: 15px; */
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin: 8px 0;
+                padding: 10px 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="matkhau">
+            <input
+                type="password"
+                name="password"
+                id=""
+                placeholder="Enter your password"
+            />
+            <i class="fa fa-eye show_2"></i>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const togglePasswordIcons =
+                    document.querySelectorAll(".show_2");
+
+                togglePasswordIcons.forEach(function (icon) {
+                    icon.addEventListener("click", function () {
+                        const passwordInput = icon.previousElementSibling;
+
+                        if (passwordInput.type === "password") {
+                            passwordInput.type = "text";
+                        } else {
+                            passwordInput.type = "password";
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

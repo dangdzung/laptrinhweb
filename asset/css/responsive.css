@@ -7,6 +7,9 @@
         color: #fff;
         font-size: 20px;
     }
+    .in-out {
+        display: none;
+    }
     .section-one .inner-wrap {
         flex-direction: column;
     }
@@ -74,6 +77,10 @@
         textarea {
         width: 100%;
     }
+    .modal{
+        display: none;
+    }
+ 
 }
 @media screen and (max-width: 1024px) {
     .section-four .inner-wrap .inner-img {
@@ -121,5 +128,8 @@
 @media screen and (max-width: 600px) {
     .section-six .inner-wrap .inner-item .inner-img img {
         width: 100%;
+    }
+    .noti {
+        width: 300px;
     }
 }

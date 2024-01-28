@@ -1,53 +1,114 @@
-let items = document.querySelectorAll(".slider .list .item");
-let next = document.getElementById("next");
-let prev = document.getElementById("prev");
-let thumbnails = document.querySelectorAll(".thumbnail .item");
+const button = document.querySelector(".button");
+const template = `<div class="modal">
+<div class="modal-content">
+  <i class="fa fa-times modal-close"></i>
+  <div class="section-form">
+            <div class="container">
+                <div class="inner-wrap" id="container">
+                    <div class="form-container sign-up">
+                        <form action="">
+                            <h1>Create Account</h1>
+                            <div class="social-icons">
+                                <a class="icon-4" href=""
+                                    ><i class="fa-brands fa-google-plus-g"></i
+                                ></a>
+                                <a class="icon-4" href=""
+                                    ><i class="fa-brands fa-facebook"></i
+                                ></a>
+                                <a class="icon-4" href=""
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                                <a class="icon-4" href=""
+                                    ><i class="fa-brands fa-linkedin-in"></i
+                                ></a>
+                            </div>
+                            <span>or use your email for registeration</span>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <button>Sign up</button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in">
+                        <form action="">
+                            <h1>Sign in</h1>
+                            <div class="social-icons">
+                                <a class="icon-4" href=""
+                                    ><i class="fa-brands fa-google-plus-g"></i
+                                ></a>
+                                <a class="icon-4" href=""
+                                    ><i class="fa-brands fa-facebook"></i
+                                ></a>
+                                <a class="icon-4" href=""
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                                <a class="icon-4" href=""
+                                    ><i class="fa-brands fa-linkedin-in"></i
+                                ></a>
+                            </div>
+                            <span>or use your email password</span>
 
-// config param
-let countItem = items.length;
-let itemActive = 0;
-// event next click
-next.onclick = function () {
-    itemActive = itemActive + 1;
-    if (itemActive >= countItem) {
-        itemActive = 0;
-    }
-    showSlider();
-};
-//event prev click
-prev.onclick = function () {
-    itemActive = itemActive - 1;
-    if (itemActive < 0) {
-        itemActive = countItem - 1;
-    }
-    showSlider();
-};
-// auto run slider
-let refreshInterval = setInterval(() => {
-    next.click();
-}, 5000);
-function showSlider() {
-    // remove item active old
-    let itemActiveOld = document.querySelector(".slider .list .item.active");
-    let thumbnailActiveOld = document.querySelector(".thumbnail .item.active");
-    itemActiveOld.classList.remove("active");
-    thumbnailActiveOld.classList.remove("active");
-
-    // active new item
-    items[itemActive].classList.add("active");
-    thumbnails[itemActive].classList.add("active");
-
-    // clear auto time run slider
-    clearInterval(refreshInterval);
-    refreshInterval = setInterval(() => {
-        next.click();
-    }, 5000);
-}
-
-// click thumbnail
-thumbnails.forEach((thumbnail, index) => {
-    thumbnail.addEventListener("click", () => {
-        itemActive = index;
-        showSlider();
-    });
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <a href="">Forget Your Password</a>
+                            <button>Sign In</button>
+                        </form>
+                    </div>
+                    <div class="toggle-container">
+                        <div class="toggle-2">
+                            <div class="toggle-panel toggle-left">
+                                <h1>Welcome back</h1>
+                                <p>
+                                    Enter your personal details to use all of
+                                    site features
+                                </p>
+                                <button class="hidden" id="login">
+                                    Sign In
+                                </button>
+                            </div>
+                            <div class="toggle-panel toggle-right">
+                                <h1>Hello, Friend!</h1>
+                                <button class="hidden" id="register">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>`;
+button.addEventListener("click", function () {
+    document.body.insertAdjacentHTML("beforeend", template);
 });
+const modalClose = document.querySelector(".modal-close");
+
+document.body.addEventListener("click", function (event) {
+    const container = document.getElementById("container");
+    const registerBtn = document.getElementById("register");
+    const loginBtn = document.getElementById("login");
+    registerBtn.addEventListener("click", () => {
+        container.classList.add("active");
+    });
+    loginBtn.addEventListener("click", () => {
+        container.classList.remove("active");
+    });
+
+    if (event.target.matches(".modal-close")) {
+        const modal = event.target.parentNode.parentNode;
+        modal.parentNode.removeChild(modal);
+    } else if (event.target.matches(".modal")) {
+        event.target.parentNode.removeChild(event.target);
+    }
+});
+
+// const container = document.getElementById("container");
+// const registerBtn = document.getElementById("register");
+// const loginBtn = document.getElementById("login");
+// registerBtn.addEventListener("click", () => {
+//     container.classList.add("active");
+// });
+// loginBtn.addEventListener("click", () => {
+//     container.classList.remove("active");
+// });

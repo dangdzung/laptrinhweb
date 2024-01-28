@@ -1,0 +1,94 @@
+.modal-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: zoom-out;
+}
+.modal-content {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+.modal-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10rem;
+    color: #000;
+    cursor: pointer;
+}
+.button2 {
+    display: block;
+    width: 150px;
+    border: 0;
+    background-color: #07a787;
+    color: white;
+    padding: 15px;
+    margin: 15px auto;
+}
+.section-form__2__2 {
+    text-align: center;
+}
+.section-form__2 form {
+    display: inline-flex;
+    flex-direction: column;
+}
+.modal-2 .modal-content .section-form__2 .social-icons {
+    margin: 10px 0;
+}
+.modal-2 .modal-content .section-form__2 .social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+.modal-2 .modal-content .section-form__2 input {
+    background-color: #ccc;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+}
+.modal-2 .modal-content .section-form__2 form a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.modal-2 .modal-content .section-form__2 form button {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: auto;
+}
