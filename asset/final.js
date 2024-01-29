@@ -148,7 +148,15 @@ const template = `<div class="modal">
                             <span>or use your email for registeration</span>
                             <input type="text" placeholder="Name" />
                             <input type="email" placeholder="Email" />
-                            <input type="password" placeholder="Password" />
+                            <div class="matkhau2">
+                            <input
+                                type="password"
+                                name="password"
+                                id=""
+                                placeholder="Enter your password"
+                            />
+                            <i class="fa fa-eye show_2"></i>
+                        </div>
                             <button>Sign up</button>
                         </form>
                     </div>
@@ -172,7 +180,16 @@ const template = `<div class="modal">
                             <span>or use your email password</span>
 
                             <input type="email" placeholder="Email" />
-                            <input type="password" placeholder="Password" />
+                            <div class="matkhau2">
+                <input
+                    type="password"
+                    name="password"
+                    id=""
+                    placeholder="Enter your password"
+                />
+                <i class="fa fa-eye show_2"></i>
+            </div>
+            
                             <a href="">Forget Your Password</a>
                             <button>Sign In</button>
                         </form>
@@ -204,6 +221,21 @@ const template = `<div class="modal">
 </div>`;
 button.addEventListener("click", function () {
     document.body.insertAdjacentHTML("beforeend", template);
+    const togglePasswordIcons = document.querySelectorAll(".show_2");
+
+    togglePasswordIcons.forEach(function (icon) {
+        icon.addEventListener("click", function () {
+            console.log("Toggle password icon clicked"); // Log để kiểm tra sự kiện click đã được kích hoạt
+
+            const passwordInput = icon.previousElementSibling;
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        });
+    });
 });
 // const modalClose = document.querySelector(".modal-close");
 
@@ -258,7 +290,7 @@ const template2 = `<div class="modal-2">
                     placeholder="Enter your password"
                 />
                 <i class="fa fa-eye show_2"></i>
-            </div>
+            </div>  
                 <a href="">Forget Your Password</a>
                 <button>Sign In</button>
             </form>
@@ -337,7 +369,6 @@ const button2 = document.querySelector(".button3");
 button2.addEventListener("click", function () {
     document.body.insertAdjacentHTML("beforeend", template2);
     const togglePasswordIcons = document.querySelectorAll(".show_2");
-
     togglePasswordIcons.forEach(function (icon) {
         icon.addEventListener("click", function () {
             console.log("Toggle password icon clicked"); // Log để kiểm tra sự kiện click đã được kích hoạt
